@@ -1,11 +1,15 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import InputShortener from './components/InputShortener';
+import UrlResult from './components/UrlResult';
+import './App.css';
 
 function App() {
+  const [inputValue,setInputValue] = useState ("");
+
   return (
-      <div>
-          Hello World!!
+      <div className= "container">
+          <InputShortener setInputValue={setInputValue}/>
+          <UrlResult inputValue={inputValue}/>
       </div>    
   )
 }
