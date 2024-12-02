@@ -1,4 +1,4 @@
-import { useEffect,useState } from "react"
+import { useState } from "react"
 
  const InputShortener = ({ setInputValue }) => {
   const [value, setValue] = useState("");
@@ -6,7 +6,7 @@ import { useEffect,useState } from "react"
     setInputValue(value);
     setValue("");
   }
-
+  
   return (
     <div className="container-2">
       <h1 >URL <span>Shortener</span></h1>

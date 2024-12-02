@@ -6,7 +6,7 @@ const UrlResult = ({inputValue}) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
-  const full_url = inputValue.includes("http") ? inputValue: inputValue;
+  const full_url = inputValue.includes("http") ? inputValue:  "http://"+inputValue;
 
   const fetchData = async () => {
     try{

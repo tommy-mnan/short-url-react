@@ -1,16 +1,18 @@
 import { useState } from 'react';
-import InputShortener from './components/InputShortener';
-import UrlResult from './components/UrlResult';
+import Home from './components/Home';
+import NotFound from './components/NotFound';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+
 
 function App() {
-  const [inputValue,setInputValue] = useState ("");
-
   return (
-      <div className= "container">
-          <InputShortener setInputValue={setInputValue}/>
-          <UrlResult inputValue={inputValue}/>
-      </div>    
+      <>
+        <Routes>
+             <Route path="/" element={<Home />} />
+             <Route path="/not-found" element={<NotFound />} />
+        </Routes>
+        </>
   )
 }
 
