@@ -7,27 +7,28 @@ This repository contains a React-based web application for shortening long URLs 
 Prerequisites
 • Node.js: Ensure that Node.js is installed on your machine. You can download it from the official website.
 
-Installation 1. Clone the repository:
+# Installation 
+1. Clone the repository:
 
-git clone https://github.com/tommy-mnan/short-url-react.git
+        git clone https://github.com/tommy-mnan/short-url-react.git
 
-    2.	Navigate to the project directory:
+2.	Navigate to the project directory:
 
-cd short-url-react
+        cd short-url-react
 
-    3.	Install dependencies:
+3.	Install dependencies:
 
-npm install
+        npm install
 
 # Running the Application
 
-    1.	Start the development server:
+1.	Start the development server:
 
-npm run dev
+  	    npm run dev
 
-    2.	Access the application:
+4.	Access the application:
 
-Open your web browser and navigate to http://localhost:3000 to use the URL shortening service.
+        Open your web browser and navigate to localhost and port to use the URL shortening service.
 
 # Usage
 
