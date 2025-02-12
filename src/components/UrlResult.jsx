@@ -11,7 +11,7 @@ const UrlResult = ({inputValue}) => {
   const fetchData = async () => {
     try{
       setLoading(true);
-      const res =  await axios.post('https://shrt-url-87c81392e5c2.herokuapp.com/shorten',{full_url});
+      const res =  await axios.post('/shorten',{full_url});
       setShortUrl(res.data.data.short_url);
     } catch(err){     
       setError(err);
